@@ -6,75 +6,89 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#0d0d0d,#1f1f1f,#000);
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-color:#fff;
-overflow:hidden;
+background:#0d1117;
+color:white;
 }
 
-.container{
-width:380px;
-padding:30px;
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(10px);
-border:2px solid orange;
-border-radius:20px;
-box-shadow:0 0 25px rgba(255,165,0,.5);
+header{
+background:#ff6600;
+padding:20px;
 text-align:center;
-animation:fade 1s ease;
 }
 
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
+header h1{
+margin-bottom:15px;
 }
 
-h1{
-color:orange;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#1a1a1a,#333);
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
 margin-bottom:20px;
-text-shadow:0 0 15px orange;
-}
-
-input,select{
-width:100%;
-padding:14px;
-margin:12px 0;
-border:none;
-border-radius:10px;
-font-size:17px;
-outline:none;
 }
 
 button{
-width:100%;
-padding:14px;
-background:linear-gradient(to right,#ff9800,#ff5722);
+background:#ff6600;
 color:white;
-font-size:18px;
-font-weight:bold;
 border:none;
-border-radius:10px;
+padding:15px 30px;
+font-size:18px;
+border-radius:8px;
 cursor:pointer;
-transition:.3s;
 }
 
 button:hover{
-transform:scale(1.05);
-box-shadow:0 0 20px orange;
+background:#ff8c00;
 }
 
-#result{
-margin-top:20px;
-font-size:17px;
-line-height:1.7;
-color:#00ff88;
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+width:280px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(255,102,0,.4);
+}
+
+.card h3{
+color:#ff9900;
+margin-bottom:10px;
+}
+
+.container{
+padding:40px;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:40px;
 }
